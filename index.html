@@ -9,5 +9,13 @@
 </style>
 <p>Critical Warning: <code>Project Not Stable. Expect Errors</code></p>
 <center>
-  <button onclick="window.loaction.href='public/index.html'">Proceed</button><button onclick="window.location.replace='about:blank'">Cancel</button>
+  <button onclick="proceed()">Proceed</button><button onclick="cancel()">Cancel</button>
 </center>
+<script>
+  function proceed() {
+    window.loaction.href = "public/index.html";
+  };
+  function cancel() {
+    window.loaction.replace("about:blank")
+  }
+</script>
