@@ -72,7 +72,7 @@ module.exports = {
         saveDirectory: path.join(__dirname, '../sessions'),
         cacheTimeout: 1000 * 60 * 20, // 20 minutes
         cacheCheckInterval: 1000 * 60 * 10, // 10 minutes
-        deleteUnused: true,
+        deleteUnused: false,
         staleCleanupOptions: {
             staleTimeout: 1000 * 60 * 60 * 24 * 3, // 3 days
             maxToLive: null,
